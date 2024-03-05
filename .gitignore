@@ -1,7 +1,2 @@
 
-apache-tomcat-8.5.99/logs/catalina.2024-03-04.log
-apache-tomcat-8.5.99/logs/catalina.out
-apache-tomcat-8.5.99/logs/host-manager.2024-03-04.log
-apache-tomcat-8.5.99/logs/localhost.2024-03-04.log
-apache-tomcat-8.5.99/logs/localhost_access_log.2024-03-04.txt
-apache-tomcat-8.5.99/logs/manager.2024-03-04.log
+apache-tomcat-8.5.99/logs/*

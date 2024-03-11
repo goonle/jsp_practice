@@ -1,24 +1,29 @@
 <%@ page contentType="text/html; charset=utf-8" %>
-<%@ page import="java.sql.DriveManager" %>
-<%@ page import="java.sql.Connection" %>
-<%@ page import="java.sql.Statement" %>
-<%@ page import="java.sql.ResultSet" %>
-<%@ page import="java.sql.SQLException" %>
-
 <html>
 	<head>
         <title>
-            clone coding
+            clone coding 0
 		</title>
 	</head>
 	<body>
-        Member table contents
-        <table width="100%" border="1">
-            <tr>
-                <td>name</td>
-                <td>id</td>
-                <td>age</td>
-            </tr>
-        </table>
+        <form action="/chapter13/insert.jsp" method="post">
+            <table border="1">
+                <tr>
+                    <td>ID</td>
+                    <td><input type="text" name="memberID" size="10"></td>
+                    <td>password</td>
+                    <td><input type="text" name="password" size="10"></td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td><input type="text" name="name" size="10"></td>
+                    <td>email</td>
+                    <td><input type="text" name="email" size="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="submit" value="insert"></td>
+                </tr>
+            </table>
+        </form>
 	</body>
 </html>

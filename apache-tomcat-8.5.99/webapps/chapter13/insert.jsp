@@ -12,6 +12,8 @@
     String name = request.getParameter("name");
     String email = request.getParameter("email");
     
+    Class.forName("com.mysql.cj.jdbc.Driver");
+
     Connection conn = null;
     PreparedStatement pstmt = null;
 

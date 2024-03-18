@@ -69,7 +69,7 @@ public class MessageDao {
         return message;
     }
     //select whole rows count
-    public int selectCount(Connection conn) throws SQLException{
+    public static int selectCount(Connection conn) throws SQLException{
         Statement stmt = null;
         ResultSet rs = null;
 

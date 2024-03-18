@@ -2,8 +2,6 @@ package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class ReadArticle {
@@ -12,8 +10,6 @@ public class ReadArticle {
 
     public Article read(int articleId) throws Exception{
         Connection conn = null;
-        PreparedStatement prstmt = null;
-        ResultSet rs = null;
 
         try{
             String jdbcUrl="jdbc:apache:commons:dbcp:chap14";

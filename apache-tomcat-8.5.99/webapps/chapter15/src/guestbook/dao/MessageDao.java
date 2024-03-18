@@ -37,7 +37,7 @@ public class MessageDao {
         }
     }
     //select message row by message_id
-    public Message Select(Connection conn, int messageId) throws SQLException {
+    public Message select(Connection conn, int messageId) throws SQLException {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {

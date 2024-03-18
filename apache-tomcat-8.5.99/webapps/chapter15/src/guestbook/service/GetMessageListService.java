@@ -40,7 +40,7 @@ public class GetMessageListService {
             messageList = Collections.emptyList();
         }
 
-        return new MessageListView(messageList, messageTotalCount, currentPageNumber, messageTotalCount, firstRow, endRow));
+        return new MessageListView(messageList, messageTotalCount, currentPageNumber, messageTotalCount, firstRow, endRow);
 
     }catch(SQLException e){
         throw new ServiceException("목록 구하기 실패 : " + e.getMessage() , e);

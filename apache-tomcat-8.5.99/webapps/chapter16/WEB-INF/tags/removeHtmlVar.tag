@@ -2,7 +2,9 @@
 <%@ attribute name="length" type="java.lang.Integer" %>
 <%@ attribute name="trail" %>
 <%@ attribute name="trim" %>
-
+<%@ attribute name="var" type="java.lang.String" rtexprvalue="false" required="true" %>
+<%@ variable name-form-attribute="var" alias="result" variable-class="java.lang.String" scope="AT_END" %>
+<%@ tag prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:doBody var="content" scope="page/>
 <%
     String content = (String) jspContext.getAttribute("content);
@@ -20,4 +22,4 @@
         }
     }
 %>
-<%= content %>
+<c:set var="result" value="<%= content%>" />

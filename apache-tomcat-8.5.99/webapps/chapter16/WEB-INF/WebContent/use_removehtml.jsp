@@ -9,6 +9,18 @@
 		</title>
 	</head>
 	<body>
-        개발 중...
-    </body>
+        <c:set var="dateEL" value="<%= new Date() %>"/>
+		<tf:removeHtml trim="true">
+			<font size="10"> 현재 <style>시간</style>은 ${dateEL} 입니다.</font>
+		</tf:removeHtml>
+		<br>
+		<tf:removeHtml length="15" trail="..." trim="true">
+			<u>현재 시간</u>은 <b>${dateEL}</b> 입니다.
+			trail 은 어미에 붙는 것
+		</tf:removeHtml>
+		<br>
+		<tf:removeHtml length="15" >
+			<jsp:body><u>현재 시간</u>은 <b>${dateEL}</b> 입니다.</jsp:body>
+		</tf:removeHtml>
+	</body>
 </html>

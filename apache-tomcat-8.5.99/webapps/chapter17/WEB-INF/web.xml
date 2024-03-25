@@ -12,4 +12,36 @@
         <servlet-name>now</servlet-name>
         <uri-pattern>/now</uri-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DBCPInit2</servlet-name>
+        <servlet-class>jdbc.DBCPInin2</servlet-class>
+        <init-param>
+            <param-name>jdbcdriver</param-name>
+            <param-value>com.mysql.jdbc.Driver</param-value>
+        </init-param>
+        <init-param>
+            <param-name>jdbcUrl</param-name>
+            <param-value>jdbc:mysql://localhost:3306/chapter14?characterEncoding=utf8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbUser</param-name>
+            <param-value>jspexam</param-value>
+        </init-param>
+        <init-param>
+            <param-name>dbPass</param-name>
+            <param-value>jsppw</param-value>
+        </init-param>
+        <init-param>
+            <param-name>poolName</param-name>
+            <param-value>chap14</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>now</servlet-name>
+        <uri-pattern>/now</uri-pattern>
+    </servlet-mapping>
+    
 </web-app>

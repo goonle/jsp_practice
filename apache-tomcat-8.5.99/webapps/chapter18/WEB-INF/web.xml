@@ -22,4 +22,35 @@
         <uri-pattern>/simple</uri-pattern>
     </servlet-mapping>
     
+
+    <servlet>
+        <servlet-name>ControllerUsingFile</servlet-name>
+        <servlet-class>mvc.controller.ControllerUsingFile</servlet-class>
+        <init-param>
+            <param-name>configFile</param-name>
+            <param-value>/WEB-INF/commandHandler.properties</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControllerUsingFile</servlet-name>
+        <uri-pattern>/controllerUsingFile</uri-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ControllerUsingURI</servlet-name>
+        <servlet-class>mvc.controller.ControllerUsingURI</servlet-class>
+        <init-param>
+            <param-name>configFile</param-name>
+            <param-value>/WEB-INF/commandHandler.properties</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControllerUsingFile</servlet-name>
+        <uri-pattern>*.do</uri-pattern>
+    </servlet-mapping>
+    
+
+
 </web-app>
